@@ -1,0 +1,1 @@
+add_executable(testArbre ../src/BinaryTree.c testArbre.c)

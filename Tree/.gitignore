@@ -1,0 +1,6 @@
+#remove idea nonsense
+.idea
+*.iml
+*.ipr
+*.iws
+cmake-build-debug

@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.5)
+set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_VERBOSE_MAKEFILE on)
+
+project(Graph C)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -ggdb3 -static-libgcc -Wall -Wextra -fsanitize=address -fno-omit-frame-pointer")
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set (CMAKE_LINKER_FLAGS_DEBUG "${CMAKE_LINKER_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
+add_subdirectory(src)
+add_subdirectory(test)
